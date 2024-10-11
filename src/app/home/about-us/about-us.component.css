@@ -1,0 +1,26 @@
+.about-us {
+  .section-title {
+    font-size: 35px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  ul {
+    margin: 20px 0 30px;
+    li {
+      font-weight: 500;
+      line-height: 30px;
+      position: relative;
+      margin-bottom: 8px;
+      padding-right: 25px;
+    }
+    li:before {
+      content: "\f058";
+      font-family: fontawesome;
+      position: absolute;
+      right: 0;
+      color: var(--main-color);
+    }
+  }
+}
