@@ -39,7 +39,7 @@ img {
   max-width: 100%;
 }
 .section-padding {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .color {
   color: var(--main-color);
