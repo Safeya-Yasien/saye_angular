@@ -1,0 +1,23 @@
+/* Testimonials Styles */
+.volunteer-opportunities,
+.volunteer-registration {
+  background-color: #f9f9f9;
+}
+
+.volunteer-opportunity {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  a {
+    transition: var(--main-transition);
+  }
+  a:hover {
+    color: var(--main-color);
+  }
+}
+
+
+
+

@@ -19,27 +19,67 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Link -->
           <li class="nav-item">
-            <a class="nav-link active-link" aria-current="page" routerLink="/"
-              >الرئيسية</a
+            <a
+              class="nav-link"
+              routerLink="/"
+              routerLinkActive="active-link"
+              [routerLinkActiveOptions]="{ exact: true }"
             >
+              الرئيسية
+            </a>
           </li>
+
+          <!-- About Link -->
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about">مبادراتنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/volunteer-opportunity"
-              >فرص التطوع</a
+            <a
+              class="nav-link"
+              routerLink="/about"
+              routerLinkActive="active-link"
             >
+              مبادراتنا
+            </a>
           </li>
+
+          <!-- Volunteer Opportunities Link -->
           <li class="nav-item">
-            <a class="nav-link" routerLink="/donate">التبرعات</a>
+            <a
+              class="nav-link"
+              routerLink="/volunteer-opportunity"
+              routerLinkActive="active-link"
+            >
+              فرص التطوع
+            </a>
           </li>
+
+          <!-- Donations Link -->
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contact">اتصل بنا</a>
+            <a
+              class="nav-link"
+              routerLink="/donate"
+              routerLinkActive="active-link"
+            >
+              التبرعات
+            </a>
+          </li>
+
+          <!-- Contact Us Link -->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/contact"
+              routerLinkActive="active-link"
+            >
+              اتصل بنا
+            </a>
           </li>
         </ul>
-        <a class="btn ms-3" routerLink="/login">تسجيل الدخول</a>
+
+        <!-- Login Button -->
+        <a class="btn ms-3" routerLink="/login" routerLinkActive="active-link">
+          تسجيل الدخول
+        </a>
       </div>
     </div>
   </nav>
