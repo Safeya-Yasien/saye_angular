@@ -1,6 +1,6 @@
 body {
   font-family: "Cairo", sans-serif;
-  /*  background-image: url(../image/background2.png);   */
+  background-image: url(/assets/images/loginPage/background2.png);  
   margin: 0;
   padding: 0;
   height: 100vh;
