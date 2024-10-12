@@ -1,0 +1,175 @@
+.modal-det {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 10000; /* Increased z-index for visibility */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+
+  .modal-content-det {
+    background-color: var(--white-color);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 25px;
+    animation: fadeIn 0.3s ease;
+
+    ::ng-deep strong {
+      font-size: 1.7em;
+      margin: 15px auto;
+      color: var(--main-color);
+    }
+
+    ::ng-deep ul {
+      margin: 20px 0;
+      padding-left: 0;
+      text-align: center;
+      list-style: none;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    ::ng-deep p {
+      line-height: 1.6;
+      color: #333333b3;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+}
+
+/* Display modal when active */
+.modal-det.active {
+  display: flex; /* Change to flex for visibility */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: none; /* Disable transform */
+  }
+  to {
+    opacity: 1;
+    transform: none; /* Disable transform */
+  }
+}
+
+/* Additional Modals (Optional) */
+.modal-reg,
+.modal-success {
+  display: none;
+  position: fixed;
+  z-index: 10000; /* Increased z-index for visibility */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-reg.active,
+.modal-success.active {
+  display: flex; /* Change to flex for visibility */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .modal-content-det {
+    width: 90%; /* Responsive width */
+  }
+}
+
+.modal-content-reg {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 25px;
+  animation: fadeIn 0.3s ease;
+  ::ng-deep h5 {
+    font-size: 2rem;
+    color: white;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    text-align: center;
+  }
+  ::ng-deep label {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s;
+    &:focus {
+      border: 2px solid var(--main-color);
+      outline: none;
+      box-shadow: 0 0 5px var(--main-color);
+      background-color: #f2fff0;
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+}
+
+.modal-success {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  .modal-content-success {
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    text-align: center;
+  }
+}
