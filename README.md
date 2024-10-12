@@ -6,7 +6,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
 ## Live Demo
-Check out our live demo at https://saye-angular-demo.com.
+Check out our live demo at [https://saye-angular-demo.com](https://sayee-angular.netlify.app/).
 
 
 ## Project Description
