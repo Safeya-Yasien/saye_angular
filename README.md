@@ -8,6 +8,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Live Demo
 Check out our live demo at [https://saye-angular-demo.com](https://sayee-angular.netlify.app/).
 
+## documentation
+https://docs.google.com/document/d/1bYSqR42_H2DppGIJ9HazVHjQOowMOinP8OYGzC9y00I/edit?usp=sharing
+
 
 ## Project Description
 SayeAngular is a web application built using Angular, AOS, Bootstrap, jQuery, and other modern web technologies. Our project aims to provide a seamless user experience by leveraging the power of these frameworks and libraries.
