@@ -6,7 +6,7 @@ h2 {
 
 .landing {
   position: relative;
-  background-image: url("../assets/imgs/joinus/amigos-grupo-unidad.jpg");
+  background-image: url("/assets/images/joinus/amigos-grupo-unidad.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -80,7 +80,7 @@ h2 {
 }
 
 .social-media-section {
-  background-image: url("../assets/imgs/joinus/images (1).jpeg");
+  background-image: url("/assets/imagse/joinus/images (1).jpeg");
   background-size: cover;
   background-position: center;
   color: var(--white-color);
