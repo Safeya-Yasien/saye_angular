@@ -1,10 +1,11 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 declare var $: any; // To allow the use of jQuery
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css'],
 })
