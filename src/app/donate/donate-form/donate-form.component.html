@@ -1,0 +1,150 @@
+<section class="donate-form">
+  <div class="container">
+    <div class="donate-plan">
+      <div class="row">
+        <div class="col-sm-6">
+          <button
+            type="button"
+            class="btn btn-outline-success donate-frequency"
+            id="onceBtn"
+          >
+            مرة واحدة
+          </button>
+        </div>
+        <div class="col-sm-6">
+          <button
+            type="button"
+            class="btn btn-outline-success donate-frequency"
+            id="monthlyBtn"
+          >
+            شهري
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional Prices -->
+    <div class="prices-group">
+      <label>
+        <input
+          type="radio"
+          name="donation-amount"
+          class="donation-amount"
+          value="50"
+        />
+        50 جنيه
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="donation-amount"
+          class="donation-amount"
+          value="100"
+        />
+        100 جنيه
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="donation-amount"
+          class="donation-amount"
+          value="200"
+        />
+        200 جنيه
+      </label>
+    </div>
+
+    <div class="mb-3 text-center">
+      <select
+        class="form-control w-50 mx-auto"
+        name="company"
+        id="company"
+        required
+      >
+        <option value="">اختر شركة</option>
+        <option value="company1">رسالة</option>
+        <option value="company2">صناع الحياة</option>
+        <option value="company3">بنك الطعام المصري</option>
+        <option value="company4">بهية</option>
+      </select>
+    </div>
+  </div>
+  <!--end Donation Options Section-->
+
+  <!--start Donation Form-->
+  <div class="donation-form container">
+    <form id="donationForm">
+      <!-- الاسم الكامل -->
+      <div class="form-group">
+        <label for="name">الاسم الكامل:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="الاسم الكامل"
+          required
+        />
+      </div>
+
+      <!-- البريد الإلكتروني -->
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="البريد الالكتروني"
+          required
+        />
+      </div>
+
+      <!-- رقم الهاتف -->
+      <div class="form-group">
+        <label for="phone">رقم الهاتف:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          name="phone"
+          placeholder="رقم الهاتف "
+          required
+        />
+      </div>
+
+      <!-- مبلغ التبرع -->
+      <div class="form-group">
+        <label for="amount">مبلغ التبرع (بالجنيه):</label>
+        <input
+          type="number"
+          class="form-control"
+          id="amountInput"
+          name="amount"
+          min="1"
+          placeholder="جنيها مصريا.... "
+          required
+        />
+      </div>
+
+      <!-- طرق الدفع -->
+      <div class="form-group">
+        <label for="payment-method">طريقة الدفع:</label>
+        <select
+          id="payment-method"
+          class="form-control"
+          name="payment-method"
+          required
+        >
+          <option value="">اختر طريقة الدفع</option>
+          <option value="credit-card">بطاقة ائتمان</option>
+          <option value="paypal">PayPal</option>
+          <option value="vodafone-cash">فودافون كاش</option>
+        </select>
+      </div>
+
+      <!-- زر الإرسال -->
+      <button type="submit" class="submit-btn mt-5">تبرع الآن</button>
+    </form>
+  </div>
+</section>

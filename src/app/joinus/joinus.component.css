@@ -1,0 +1,180 @@
+h2 {
+  margin: 15px 0;
+  padding: 10px;
+  color: #0f4604;
+}
+
+.landing {
+  position: relative;
+  background-image: url("/assets/images/joinus/amigos-grupo-unidad.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  text-align: center;
+  height: 50vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.features,
+.form,
+.FAQ {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.features .card:hover {
+  transform: scale(1.05);
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+
+.faq-answer {
+  padding-top: 10px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.collapse {
+  transition: height 0.5s ease;
+}
+
+.social-media-section {
+  background-image: url("/assets/images/joinus/images (1).jpeg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.social-media-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 70%);
+  z-index: 1;
+}
+
+.social-media-section h1 {
+  position: relative;
+  z-index: 2;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  a {
+    font-size: 30px;
+  }
+}
+
+.form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  text-align: right;
+  padding: 20px;
+  .btn:hover {
+    color: var(--white-color);
+  }
+}
+
+.form h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form .form-control:focus {
+  border-color: rgb(29, 109, 14);
+  box-shadow: 0 0 5px rgba(29, 109, 14, 0.5);
+}
+
+.form .form-label {
+  text-align: right;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form button {
+  background-color: #046727;
+  border: none;
+  color: var(--white-color);
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.form button:hover {
+  background-color: #034f1e;
+}
+
+.mb-3 {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.fab {
+  color: #fff;
+}
+.fab:hover {
+  transform: scale(1.05);
+}
