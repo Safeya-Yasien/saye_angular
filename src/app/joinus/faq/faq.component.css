@@ -22,11 +22,9 @@
 }
 
 .faq-answer {
-  padding-top: 10px;
-  line-height: 1.6;
-  text-align: right;
+  display: none; /* Hidden by default */
 }
 
-.collapse {
-  transition: height 0.5s ease;
+.faq-answer:not(.collapse) {
+  display: block; /* Shown when the collapse class is removed */
 }
