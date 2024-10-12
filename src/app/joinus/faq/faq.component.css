@@ -1,0 +1,32 @@
+.FAQ {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+
+.faq-answer {
+  padding-top: 10px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.collapse {
+  transition: height 0.5s ease;
+}
